@@ -1,17 +1,20 @@
 import React, { useState } from 'react'
 
+
+
 function formutilis({title}) {
+ const [text,settext] =useState("Enter Your Name");
 
-    const [text,settext]=useState("Enter Your Text");
-
-    const handleClick=()=>{
-        console.log("Click");
-        let updatetext=text.toUpperCase()
-        settext(updatetext);
+    const handleClick=()=>
+    {
+        let updatetext=text.toUpperCase();
+        settext(updatetext)
     }
-    const handleChange=(event)=>{
+    const handleChange=(event)=>
+    {
         settext(event.target.value)
     }
+
     return (
         <React.Fragment>
             <div className="container mt-5">
