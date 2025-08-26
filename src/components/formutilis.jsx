@@ -25,6 +25,12 @@ function formutilis({title}) {
                 </div>
                 <button className='btn btn-primary' onClick={handleClick} >Uppercase</button>
             </div>
+
+
+            <div className="container mt-3">
+                <h1>Text Summary</h1>
+                <p>{text.split(' ').length} words and {text.length}</p>
+            </div>
         </React.Fragment>
     )
 }
